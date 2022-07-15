@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        border: 1px red solid;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .btn {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      #blak {
+        background-color: black;
+        width: 100px;
+        margin: auto;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="btn">
+        <button onclick="c1()">变宽</button>
+        <button onclick="c2()">变高</button>
+        <button onclick="c3()">变色</button>
+        <button onclick="c4()">隐藏</button>
+        <button onclick="c5()">重置</button>
+      </div>
+      <div id="blak"></div>
+    </div>
+  </body>
+</html>
+<script>
+  var c = document.getElementById("blak");
+  function c1() {
+    c.style.width = "200px";
+  }
+  
+  function c2() {
+    c.style.height = "200px";
+  }
+  
+  function c3() { 
+    c.style.backgroundColor = "pink";
+  }
+  
+  function c4() {
+    c.style.display = "none";
+  }
+  
+  function c5() { 
+    c.style.width = "100px";
+    c.style.height = "100px";
+    c.style.display = "block";
+    c.style.backgroundColor = "black";
+  }
+   
+</script>

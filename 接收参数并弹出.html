@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="p1" type="text" value="北京市" />
+    <input id="p2" type="text" value="朝阳区" />
+    <input id="p3" type="text" name="pl" />
+    <button onclick="jump()">传参</button>
+  </body>
+</html>
+<script>
+  var inp1 = document.getElementById("p1").value;
+  var inp2 = document.getElementById("p2").value;
+  var inp3 = document.getElementById("p3").value;
+  console.log($('inp3').val);
+  function jump() {
+    alert(inp1);
+    alert(inp2);
+  }
+</script>
